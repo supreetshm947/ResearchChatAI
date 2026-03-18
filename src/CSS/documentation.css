@@ -1,0 +1,148 @@
+input#searchInput {
+    border-radius: 30px;
+    border-color: #8d8c8c96;
+}
+
+.tile-search {
+    margin-bottom: 20px;
+}
+
+.tile {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+article.tile.is-child.box .title {
+    margin-bottom: 0px;
+}
+
+article.tile.is-child.box hr {
+    background-color: #f5f5f5;
+    border: none;
+    display: block;
+    height: 2px;
+    margin: 17px 0;
+}
+
+a.box:focus, a.box:hover {
+    box-shadow: 0 .5em 1em -.125em rgba(10,10,10,.1),0 0 0 1px #fff;
+    transform: scale(1.1)!important;
+}
+
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding-left: 3rem;
+}
+
+.search-bar .icon {
+    position: absolute;
+    left: 1rem;
+    color: #7a7a7a;
+}
+
+div#tilesContainer {
+    margin-top: 40px;
+}
+
+div#tilesContainer:hover {
+    transform: scale(1.00);
+
+}
+
+h3.title {
+    font-size: 17px;
+    color:#485fc7!important;
+}
+
+.tile.is-active article {
+    background-color: #f0f8ff;
+    transition: background-color 0.3s ease;
+}
+
+.hidden-content {
+    display: none;
+}
+.active .hidden-content {
+    display: block;
+}
+.tiles-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+}
+.tiles-container.hidden {
+    display: none;
+}
+.single-tile {
+    display: none;
+}
+.single-tile.active {
+    display: block;
+}
+.back-button {
+    margin-top: 16px;
+}
+
+.tile-search .input {
+    border-radius: 4px;
+}
+
+.tile-search .icon {
+    color: #b5b5b5;
+}
+
+.section.section.has-background-success-light {
+    padding: 2rem 1rem;
+    
+}
+
+.button.is-primary {
+    background-color: #00d1b2;
+    border-color: transparent;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.tile.is-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; 
+}
+
+.tile.is-child h3.title {
+    flex-grow: 1; 
+    display: flex;
+    align-items: flex-start;
+}
+
+.tile.is-child hr {
+    margin-top: 0px; 
+}
+
+hr {
+    background-color: #f5f5f5;
+    border: none;
+    display: block;
+    height: 2px;
+    margin: 5px;
+}
+
+.tile.is-child p {
+    margin-top: 0px; 
+}
+
+p.title.is-3 {
+    font-size: 25px;
+}
+
+@media screen and (min-width: 1024px) {
+    .section {
+        padding: 2rem 0rem;
+    }
+}

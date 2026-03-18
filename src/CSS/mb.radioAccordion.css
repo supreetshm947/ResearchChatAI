@@ -1,0 +1,57 @@
+/* Radio buttons */
+
+.formRadioGroup .radioButton {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 0px;
+    width: calc(100% - 0px);
+    height: 56px;
+    background-color: #ececec;
+    color: black;
+    text-align: left;
+    padding-left: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.radioButton .circle {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid #54E0C7;
+    color: #54E0C7;
+    text-align: center;
+    line-height: 28px;
+}
+
+.radioButton .circle i {
+    display: none;
+    line-height: 28px;
+}
+
+.radioButton.active {
+    background-color: #5562eb;
+    color: white;
+}
+
+.radioButton.active .circle {
+    background-color: #54E0C7;
+    color: white;
+}
+
+.radioButton.active .circle i {
+    display: block;
+}
+
+.followUpContainer {
+    margin-left: 60px;
+    margin-right: 39px;
+    width: calc(100% - 90px);
+}

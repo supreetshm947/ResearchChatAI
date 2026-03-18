@@ -1,0 +1,79 @@
+<!--
+/**
+ * study-closed.html
+ *
+ * Displays a message when the study is no longer active.
+ * Static page shown to users attempting to access a closed study.
+ *
+ * ResearchChatAI
+ * Author: Marc Becker, David de Jong
+ * License: MIT
+ */
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Study Closed - ResearchChatAI</title>
+    
+    <!-- Security Meta Tags -->
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="src/CSS/login.css">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="src/FONTS/font-awesome-5.6.3/css/solid.min.css">
+    <link rel="stylesheet" href="src/FONTS/font-awesome-5.6.3/css/light.min.css">
+    <link rel="stylesheet" href="src/FONTS/font-awesome-5.6.3/css/regular.min.css">
+    <link rel="stylesheet" href="src/FONTS/font-awesome-5.6.3/css/brands.min.css">
+    <link rel="stylesheet" href="src/FONTS/font-awesome-5.6.3/css/fontawesome.min.css">
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title has-text-centered" style="margin-top:100px;">ResearchChatAI</h1>
+            
+            <!-- Study Closed Card -->
+            <div id="loginCard" class="card">
+                <header class="card-header has-background-warning">
+                    <p class="card-header-title has-text-dark">
+                        <span class="icon">
+                            <i class="fas fa-lock"></i>
+                        </span>
+                        <span>Study Closed</span>
+                    </p>
+                </header>
+                
+                <div class="card-content">
+                    <div class="content has-text-centered">
+                        <p class="mb-4">
+                            <span class="icon is-large has-text-warning">
+                                <i class="fas fa-lock fa-3x"></i>
+                            </span>
+                        </p>
+                        
+                        <h3 class="title is-4 mb-4">This Study Is No Longer Active</h3>
+                        
+                        <p class="mb-4">
+                            The research study you are trying to access has been closed and is no longer accepting participants.
+                        </p>
+                        
+                        <p class="has-text-grey">
+                            If you believe this is an error or have questions about this study, 
+                            please contact the study administrator.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

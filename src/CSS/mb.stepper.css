@@ -1,0 +1,81 @@
+/* Stepper - Thanks to https://ishadeed.com/article/stepper-component-html-css/ */
+
+:root {
+    --circle-size: 60px;
+    --spacing: clamp(0.25rem, 2vw, 0.5rem);
+}
+
+.c-stepper {
+    display: flex;
+    max-width: 760px;
+    margin: 0 auto;
+    margin-top: 48px;
+}
+
+.c-stepper__item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.c-stepper__icon {
+    width: var(--circle-size);
+    height: var(--circle-size);
+    background-color: #eff5fb;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    color: #296fa8;
+}
+
+.c-stepper__item:not(:last-child):after {
+    content: "";
+    position: absolute;
+    top: 1.5rem;
+    left: calc(50% + calc(var(--circle-size) / 2 + var(--spacing)));
+    width: calc(100% - var(--circle-size) - calc(var(--spacing) * 2));
+    height: 2px;
+    background-color: #296fa8;
+}
+
+.c-stepper__title {
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 0;
+    color: #296fa8;
+}
+
+.c-stepper__desc {
+    color: grey;
+    font-size: 0.85em;
+    padding-left: var(--spacing);
+    padding-right: var(--spacing);
+    color: #296fa8;
+}
+
+/* Change color if inactive */
+.c-stepper__item.inactive .c-stepper__icon {
+    background-color: #e0e0e0;
+    color: grey;
+}
+
+.c-stepper__item.inactive .c-stepper__title {
+    color: grey;
+}
+
+.c-stepper__item.inactive .c-stepper__desc {
+    color: grey;
+}
+
+.c-stepper__item.inactive:after {
+    background-color: #e0e0e0;
+}
+
+.c-stepper__item.current:after {
+    background-color: #e0e0e0;
+}

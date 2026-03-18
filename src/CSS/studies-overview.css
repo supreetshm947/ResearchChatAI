@@ -1,0 +1,69 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  margin: 30px auto;
+  max-width: 1266px;
+}
+@media (max-width: 1407px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 922px;
+  }
+}
+@media (max-width: 1000px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 722px;
+  }
+}
+@media (max-width: 750px) {
+  .grid {
+    grid-template-columns: 1fr;
+    max-width: 350px;
+  }
+}
+.grid .card {
+  max-width: 300px;
+}
+.grid .card .card-header-title {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline;
+}
+.grid .card ul {
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.grid .card ul li {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+  margin-bottom: 1rem;
+}
+.grid .card ul li:last-of-type {
+  margin-bottom: 4px;
+}
+.grid .card ul li i {
+  margin-right: 24px;
+  width: 36px;
+  height: 36px;
+  font-size: 1rem;
+  line-height: 36px;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.model-name {
+  display: inline-block;
+  max-width: 14px;     /* adjust as needed */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+}
+
+/*# sourceMappingURL=projects-overview.css.map */
