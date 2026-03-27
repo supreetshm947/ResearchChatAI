@@ -20,7 +20,7 @@ function loadEnv(string $path): array {
     }
     return $env;
 }
-$env = loadEnv(__DIR__ . '/../../../.env');
+$env = loadEnv(__DIR__ . '/../../.env');
 
 $databaseInfo = [
     'database_type' => 'mysql',
