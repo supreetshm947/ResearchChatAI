@@ -1,2 +1,6 @@
 .DS_Store
 **/.DS_Store
+
+# Admin dashboard
+admin-dashboard.php
+src/CSS/admin-dashboard.css

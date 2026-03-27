@@ -310,6 +310,7 @@ function importStudy($database, array $studyData): array
     
     try {
         // Insert study into database
+        $studyData["studyCreatedDate"] = date('Y-m-d H:i:s');
         $database->insert("studies", $studyData);
         
         $insertedID = $database->id();

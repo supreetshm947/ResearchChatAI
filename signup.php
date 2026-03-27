@@ -292,14 +292,15 @@ function createUserAccount($database, string $firstName, string $lastName, strin
         $hashedPassword = password_hash($password, PASSWORD_ARGON2ID);
 
         $insertResult = $database->insert("users", [
-            "userName"       => $firstName,
-            "userSurname"    => $lastName,
-            "userEmail"      => $email,
-            "userPassword"   => $hashedPassword,
-            "publicKey"      => $publicKey,
-            "privateKeyEnc"  => $privateKeyEnc,
-            "keySalt"        => base64_encode($keySalt),
-            "recoveryKeyEnc" => $recoveryKeyEnc,
+            "userName"             => $firstName,
+            "userSurname"          => $lastName,
+            "userEmail"            => $email,
+            "userPassword"         => $hashedPassword,
+            "publicKey"            => $publicKey,
+            "privateKeyEnc"        => $privateKeyEnc,
+            "keySalt"              => base64_encode($keySalt),
+            "recoveryKeyEnc"       => $recoveryKeyEnc,
+            "userRegistrationDate" => date('Y-m-d H:i:s'),
         ]);
 
         if ($insertResult === false) {

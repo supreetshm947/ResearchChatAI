@@ -136,7 +136,8 @@ function createStudy($database, int $userID, string $studyName): array
             "studyCode" => $studyCode,
             "openaiApiKey" => "",
             "openrouterApiKey" => "",
-            "isEncrypted" => 1
+            "isEncrypted" => 1,
+            "studyCreatedDate" => date('Y-m-d H:i:s')
         ]);
         
         // Get inserted ID
