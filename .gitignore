@@ -6,3 +6,4 @@ admin-dashboard.php
 src/CSS/admin-dashboard.css
 
 .env
+php_error.log
