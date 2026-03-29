@@ -284,7 +284,7 @@ if (!empty($req['auth']) && is_array($req['auth'])) {
 
 /* Generate a cryptographically secure one-time token */
 $token     = bin2hex(random_bytes(32));
-$configDir = $env['STREAM_CONFIG_DIR'] ?? '/tmp/rcai_stream_configs';
+$configDir = !empty($env['STREAM_CONFIG_DIR']) ? $env['STREAM_CONFIG_DIR'] : '/tmp/rcai_stream_configs';
 
 if (!is_dir($configDir)) {
     mkdir($configDir, 0700, true);

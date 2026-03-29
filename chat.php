@@ -2016,7 +2016,9 @@ if ($study['dataCollectionActive'] == 0) {
                         var reasoningPath = prepData.reasoningPath;
 
                         // Step 2: Send request via Node proxy → get full JSON response
-                        return fetch(baseURL + 'Backend/Chat/stream', {
+                        // Changing URL to node proxy
+                        var streamURL = 'http://localhost:9222/stream';
+                        return fetch(streamURL, {
                                 method: 'POST',
                                 headers: {
                                     'Content-Type': 'application/json'
