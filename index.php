@@ -33,11 +33,10 @@ header("Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-i
 // =============================================================================
 // AUTHENTICATION CHECK
 // =============================================================================
-
-if (!isset($_SESSION['pm_loggedin']) || $_SESSION['pm_loggedin'] !== true) {
-  header('Location: https://about.researchchatai.com');
-  exit;
-}
+// if (!isset($_SESSION['pm_loggedin']) || $_SESSION['pm_loggedin'] !== true) {
+//   header('Location: https://about.researchchatai.com');
+//   exit;
+// }
 
 if (!isset($_SESSION['userID'])) {
   session_destroy();
